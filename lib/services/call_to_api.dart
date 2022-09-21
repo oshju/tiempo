@@ -22,7 +22,7 @@ class CallToApi {
       }
 
       var url = Uri.https('api.openweathermap.org', '/data/2.5/weather',
-          {'q': cityName, "units": "metric", "appid": 'bdf24158669de949e5a848882be93987'});
+          {'q': cityName, "units": "metric", "appid": ''});
       final http.Response response = await http.get(url);
       log(response.body.toString());
       if (response.statusCode == 200) {
